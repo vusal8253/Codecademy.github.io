@@ -1,13 +1,246 @@
-button {
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    min-height: 100vh;
+    background-color: #27272c;
+    position: relative;
+}
+
+h1 {
+    font-size: 4rem;
     color: #fff;
-    padding: 8px 22px;
-    border-radius: 6px;
-    background: #7d2ae8;
-    transition: all 0.2s ease;
+    -webkit-text-stroke: 1.5px black;
+}
+
+h1::before {
+    content: "Neon Button";
+    color: #00ff00;
+    position: absolute;
+    transform: translate(-0.3%, 3%);
+    z-index: -1;
+    -webkit-text-stroke: 0px;
+    text-shadow: 0 0 9px;
 
 }
-button:active {
-    transform: scale(0.96);
 
+h1::after {
+    content: "Animation";
+    color: #fff01f;
+    position: absolute;
+    transform: translate(-100.6%, 3%);
+    z-index: -1;
+    -webkit-text-stroke: 0px;
+    text-shadow: 0 0 9px;
+}
+
+.btnsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 400px;
+}
+
+.btn {
+    position: relative;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    background: #272822;
+    border: 4px solid #444;
+    padding: 2rem 6rem;
+    cursor: pointer;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn:nth-child(1):hover {
+    border-color: #00ff00;
+    color: #00ff00;
+    box-shadow: 0 0 0 #00ff00;
+    animation: box 3s infinite;
+}
+
+.btn:nth-child(2):hover {
+    border-color: #fff01f;
+    color: #fff01f;
+    box-shadow: 0 0 0 #fff01f;
+    animation: box 3s infinite;
+}
+
+.btn:nth-child(3):hover {
+    border-color: #ff1818;
+    color: #ff1818;
+    box-shadow: 0 0 0 #ff1818;
+    animation: box 3s infinite;
+}
+
+.btn:nth-child(4):hover {
+    border-color: #0066ff;
+    color: #0066ff;
+    box-shadow: 0 0 0 #0066ff;
+    animation: box 3s infinite;
+}
+
+@keyframes box {
+    0% {
+        box-shadow: #27272c;
+    }
+
+    50% {
+        box-shadow: 0 0 27px;
+    }
+
+    100% {
+        box-shadow: #27272c;
+    }
+
+}
+
+.btn::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #00ff00;
+    position: absolute;
+    left: 80%;
+    top: -15%;
+    transform: translate(0%, 15%);
+    transition: left 1s ease;
+}
+
+.btn::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #00ff00;
+    position: absolute;
+    left: 20%;
+    top: 115%;
+    transform: translate(0%, -115%);
+    transition: left 1s ease;
+}
+
+.btn:nth-child(1)::before {
+    background-color: #00ff00;
+    border-radius: 2px;
+}
+
+.btn:nth-child(1)::after {
+    background-color: #00ff00;
+    border-radius: 2px;
+}
+
+.btn:nth-child(2)::before {
+    background-color: #fff01f;
+    border-radius: 50px;
+}
+
+.btn:nth-child(2)::after {
+    background-color: #fff01f;
+    border-radius: 50px;
+}
+
+.btn:nth-child(3)::before {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 24px solid #ff1818;
+    top: -17.5%;
+}
+
+.btn:nth-child(3)::after {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 24px solid #ff1818;
+    top: 117.5%;
+}
+
+.btn:nth-child(4)::before {
+    background-color: #0066ff;
+    border-radius: 2px;
+    width: 25px;
+    height: 10px;
+    top: -9%; 
+}
+
+.btn:nth-child(4)::after {
+    background-color: #0066ff;
+    border-radius: 2px;
+    width: 25px;
+    height: 10px;
+    top: 108%; 
+}
+.btn:hover::before {
+    left: 85%;
+    animation: rotateTop 3s infinite;
+}
+
+.btn:hover::after {
+    left: 15%;
+    animation: rotateBottom 3s infinite;
+}
+
+@keyframes rotateTop {
+    0% {
+        transform: translate(0, 15%) rotate(Odeg);
+    }
+
+    25% {
+        transform: translate(0, 15%) rotate(90deg);
+    }
+
+    50% {
+        transform: translate(0, 15%) rotate(180deg);
+    }
+
+    75% {
+        transform: translate(0, 15%) rotate(270deg);
+    }
+
+    100% {
+        transform: translate(0, 15%) rotate(360deg);
+    }
+}
+
+@keyframes rotateBottom {
+    0% {
+        transform: translate(0, -115%) rotate(odeg);
+    }
+
+    25% {
+        transform: translate(0, -115%) rotate(-90deg);
+    }
+
+    50% {
+        transform: translate(0, -115%) rotate(-180deg);
+    }
+
+    75% {
+        transform: translate(0, -115%) rotate(-270deg);
+    }
+
+    100% {
+        transform: translate(0, -115%) rotate(-360deg);
+    }
 
 }
