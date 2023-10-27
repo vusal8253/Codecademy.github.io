@@ -5,6 +5,7 @@ import {Education} from './components/Education';
 import {Home} from './components/Home';
 import {About} from './components/About';
 import { Experience } from './components/Experience';
+import { Footer } from './components/Footer';
 
 
 export const App = () => {
@@ -17,6 +18,7 @@ export const App = () => {
       <Route path='/' element={<Home/>} />
       <Route path='/experince' element={<Experience/>} />
     </Routes>
+      <Footer/>
    </div>
   );
 };
