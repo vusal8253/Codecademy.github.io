@@ -9,7 +9,8 @@ import {BsLinkedin} from 'react-icons/bs';
 
 export const Footer = () => {
   return (
-    <div className='footer'>
+    <div className='container1'>
+      <div className='footer'>
       <ul>
         <li><AiFillInstagram size='1.5rem' className = 'icons-Instagram'/></li>
         <li><BsFacebook size='1.5rem' className = 'icons-Facebook'/> </li>
@@ -17,5 +18,7 @@ export const Footer = () => {
         <li><BsLinkedin size='1.5rem' className = 'icinons-Twitter'/></li>
       </ul>
     </div>
+    </div>
+    
   )
 }
