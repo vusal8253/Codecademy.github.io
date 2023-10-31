@@ -4,14 +4,9 @@
   height: 100vh;
   width: 100%;
 }
-.wrapp{
-  height: 100vh;
+
+.footer1 {
+  position: fixed;
   width: 100%;
-}
-.footer1{
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  align-items: end;
-  
+  bottom: 0;
 }
