@@ -12,5 +12,9 @@ ul{
     list-style: none;
 }
 ul li{
-    padding-left: 2rem;
+  padding-left: 2rem;
+}
+
+ul li a:active{
+  color: yellow;
 }
