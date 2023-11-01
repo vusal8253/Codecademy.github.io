@@ -1,0 +1,11 @@
+.App{
+    margin-top: 100px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+
+}
+ul li{
+   list-style: none;
+}
