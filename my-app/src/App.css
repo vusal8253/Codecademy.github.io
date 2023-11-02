@@ -1,4 +1,6 @@
-
+body{
+  background-color: aqua;
+}
 .App {
   background-color: aqua;
   height: 100vh;
