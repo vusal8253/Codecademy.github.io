@@ -1,13 +1,17 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Search from './Search';
+import Search1 from './Search1';
+
 
 function App() {
 
    
   return (
-    <div>
-      <h1 className='text-center text-info'>Search filter</h1>
-    </div>
+    <>
+     {/* <Search/> */}
+     <Search1/>
+    </>
   );
 }
 
