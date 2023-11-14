@@ -20,4 +20,4 @@ const talkingPlushie = {
   talkingPlushie.greet("Asaye");
   talkingPlushie.talkingPlushie.name("Bing Bong");
   remove;
-  delete talkingPlushie.unspreadingJoy;
+  home talkingPlushie.unspreadingJoy;
