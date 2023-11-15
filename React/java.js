@@ -462,3 +462,30 @@
   
 //   module.exports = Node;
   
+// import React from 'react';
+
+// class AddToCart extends React.Component{
+//   constructor(props){
+//     super(props);
+//     this.state = { inCart: false };
+//     this.addToCart = this.addToCart.bind(this);
+//   }
+
+//   addToCart(){
+//     const newInCart = this.state.inCart === true ? false : true;
+//     this.setState({ inCart: newInCart });
+//   }
+
+//   render(){
+//     return(
+//       <div>
+//         <button onClick={this.addToCart}>Add To Cart</button>
+//         {this.state.inCart && (
+//           <p>Your item has been added to your cart!</p>
+//         )}
+//       </div>
+//     )
+//   }
+// }
+
+// export default AddToCart;
