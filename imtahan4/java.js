@@ -125,5 +125,8 @@
 //   Math.floor(Math.random() * 10000)
 
 // namesArray.forEach(name =>  console.log('Welcome, ' + name + '!'));
+const jsonData = '{"name":"Aristotle","department":"Marketing","manager":"Plato","reports":["Alexander","Ptolemy","Cassander"]}';
 
-  
+const employeeRecord = JSON.parse
+const manager = employeeRecord
+console.log(manager);
