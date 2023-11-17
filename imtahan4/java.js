@@ -4,6 +4,8 @@
 //   console.log('coin is tails...');
 // }
 
+// const { Button } = require("bootstrap")
+
 // let runTime = 35;
 // let runDistance = 3.5;
 
@@ -125,8 +127,31 @@
 //   Math.floor(Math.random() * 10000)
 
 // namesArray.forEach(name =>  console.log('Welcome, ' + name + '!'));
-const jsonData = '{"name":"Aristotle","department":"Marketing","manager":"Plato","reports":["Alexander","Ptolemy","Cassander"]}';
+// let cars = ['ferrari', 'tesla', 'cadillac'];
+// let car1 = cars[0];
+// let car2 = cars[1];
+// let car3 = cars[2];
+// console.log(car1, car2, car3);
 
-const employeeRecord = JSON.parse
-const manager = employeeRecord
-console.log(manager);
+//  let vusal = { ad: "vusal", soyad: "Memmedov" };
+//  let { ad, soyad } = vusal;
+//  console.log(ad,soyad);
+
+// let truck = {
+//     model: '1977 Mustang convertible',
+//     maker: 'Ford',
+//     city: 'Detroit',
+//     year: '1977',
+//     convertible: true
+//   };
+  
+//   const printCarInfo = ({model, maker, city}) => {
+//     console.log(`The ${model}, or ${maker}, is in the city ${city}.`);
+//   };
+  
+//   printCarInfo(truck);
+// Prints: The 1977 Mustang convertible, or Ford, is in the city Detroit.
+
+let yo = () => {
+    alert('Yo');
+};
