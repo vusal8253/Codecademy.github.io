@@ -152,6 +152,34 @@
 //   printCarInfo(truck);
 // Prints: The 1977 Mustang convertible, or Ford, is in the city Detroit.
 
-let yo = () => {
-    alert('Yo');
-};
+
+
+// ders 5
+// class Node {
+//     constructor(data) {
+//       // complete constructor method here
+//       this.data = data;
+//       this.next = null;
+//     }
+  
+//     setNextNode(node) {
+//   // complete setNextNode method here
+//   if (node instanceof Node || node === null) {
+//         this.next = node;
+//       } else {
+//         throw new Error('Next node must be a member of the Node class.');
+//       }
+//     }
+    
+//     getNextNode() {
+//       return this.next;
+//     }
+//   }
+  
+//   module.exports = Node;
+
+
+/// 5-4
+// https://discuss.codecademy.com/t/did-you-make-a-recursive-call-to-countdownrecursive-with-count-decremented/748317
+//5-5
+//https://dev.to/shubhamtiwari909/merge-sort-algorithm-in-javascript-3ko7
