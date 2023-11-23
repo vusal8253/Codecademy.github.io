@@ -361,72 +361,6 @@
 //   }
   
 //   // Write your event handler here
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Friendsgiving RSVP Form</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1 id="rsvpHeader">Friendsgiving RSVP</h1>
-    <form>
-      <label for="firstName" id="firstNameLabel">First Name</label>
-      <input type="text" id="firstName" required>
-      <br>
-      <label for="lastName" id="lastNameLabel">Last Name</label>
-      <input type="text" id="lastName" required>
-      <br>
-      <label for="partySize" id="partySizeLabel">How many individuals will be in your party?</label>
-      <input type="number"  min="1" max="3" required>
-      <br>
-      <input type="submit" id="submitBtn" value="RSVP">
-    </form>
-  </body>
-</html>
-
-
-// <!DOCTYPE html>
-// <html>
-
-// <head>
-//   <meta charset="utf-8">
-//   <meta name="viewport" content="width=device-width">
-//   <title>Puppy Love</title>
-//   <link href="style.css" rel="stylesheet" type="text/css">
-//   <script src="script.js" defer></script>
-// </head>
-
-// <body>
-
-// <!-- Header -->
-//   <header id="header">
-    
-//     <h1 id="pageTitle">Puppy Love</h1>
-//     <h2 id="subheader">Find the furrfect new addition to your family!</h2>
-
-// <!-- Nav Bar -->
-//     <nav id="navBar">
-//       <ul>
-//         <li><a href="#">Adopt a Puppy</a></li>
-//         <li><a href="#">Foster a Animal</a></li>
-//         <li><a href="#">Contact</a></li>
-//       </ul>
-//     </nav>
-    
-//   </header>
-  
-// <!--  Img Div -->
-//   <div id="imgDiv">
-//     <img 
-      id="puppyImg" 
-      src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=300&h=auto&dpr=1"
-      alt="puppyImg"
-    >
-  </div>
-</body>
-
-</html>
-
 // <!DOCTYPE html>
 // <html>
 //   <head>
@@ -441,11 +375,77 @@
 //       <br>
 //       <label for="lastName" id="lastNameLabel">Last Name</label>
 //       <input type="text" id="lastName" required>
-//       <br>  
-//        <label for="partySize" id="partySizeLabel">How many individuals will be in your party?</label>
-//        <input type="number" min="1" max="3" id="partySize" required>
+//       <br>
+//       <label for="partySize" id="partySizeLabel">How many individuals will be in your party?</label>
+//       <input type="number"  min="1" max="3" required>
 //       <br>
 //       <input type="submit" id="submitBtn" value="RSVP">
 //     </form>
 //   </body>
 // </html>
+
+
+// // <!DOCTYPE html>
+// // <html>
+
+// // <head>
+// //   <meta charset="utf-8">
+// //   <meta name="viewport" content="width=device-width">
+// //   <title>Puppy Love</title>
+// //   <link href="style.css" rel="stylesheet" type="text/css">
+// //   <script src="script.js" defer></script>
+// // </head>
+
+// // <body>
+
+// // <!-- Header -->
+// //   <header id="header">
+    
+// //     <h1 id="pageTitle">Puppy Love</h1>
+// //     <h2 id="subheader">Find the furrfect new addition to your family!</h2>
+
+// // <!-- Nav Bar -->
+// //     <nav id="navBar">
+// //       <ul>
+// //         <li><a href="#">Adopt a Puppy</a></li>
+// //         <li><a href="#">Foster a Animal</a></li>
+// //         <li><a href="#">Contact</a></li>
+// //       </ul>
+// //     </nav>
+    
+// //   </header>
+  
+// // <!--  Img Div -->
+// //   <div id="imgDiv">
+// //     <img 
+//       id="puppyImg" 
+//       src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=300&h=auto&dpr=1"
+//       alt="puppyImg"
+//     >
+//   </div>
+// </body>
+
+// </html>
+
+// // <!DOCTYPE html>
+// // <html>
+// //   <head>
+// //     <title>Friendsgiving RSVP Form</title>
+// //     <link rel="stylesheet" href="style.css">
+// //   </head>
+// //   <body>
+// //     <h1 id="rsvpHeader">Friendsgiving RSVP</h1>
+// //     <form>
+// //       <label for="firstName" id="firstNameLabel">First Name</label>
+// //       <input type="text" id="firstName" required>
+// //       <br>
+// //       <label for="lastName" id="lastNameLabel">Last Name</label>
+// //       <input type="text" id="lastName" required>
+// //       <br>  
+// //        <label for="partySize" id="partySizeLabel">How many individuals will be in your party?</label>
+// //        <input type="number" min="1" max="3" id="partySize" required>
+// //       <br>
+// //       <input type="submit" id="submitBtn" value="RSVP">
+// //     </form>
+// //   </body>
+// // </html>
