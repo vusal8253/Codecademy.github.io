@@ -26,7 +26,7 @@
   
 //   console.log(`${starryNight.title} by ${starryNight.artist} is on sale for $${starryNight.price}!`);
 
-//2
+2
 // const generatePassword = () => {
 //   let passwordLength = Math.floor(Math.random() * 5 + 4);
 //   let generatedPassword = Math.floor(Math.random() * Math.pow(10, passwordLength));
@@ -110,7 +110,7 @@
 //7
 // import React from 'react';
 
-// // Create a functional component called App that renders Hello World! as an H1 element
+// Create a functional component called App that renders Hello World! as an H1 element
 // function App() {
 //   return (
 //     <div>
@@ -121,6 +121,33 @@
 
 // export default App;
 
+// import React, { useState } from 'react';
+
+// function Reserve(props){
+//   const [reserved, setReserved] = useState(false);
+ 
+//   function reserveEvent() {
+//     setReserved(!reserved);
+//   }
+
+
+//     return(
+//       <div className='Reserve'>
+//         {<h2>{props.eventName}</h2>}
+//         <h2>REPLACE ME</h2>
+//         <button onClick={reserveEvent}>
+//           RSVP Now!
+//         </button>
+//         {"REPLACE ME" && (
+//             reserved && <p>You're set! See you there!</p>  
+//         )}
+//       </div>
+//     )
+  
+// }
+
+export default Reserve;
+
 //8
 // git branch resume
 // $ git branch
@@ -130,29 +157,10 @@
 // $ 
 
 
-/// 5 ders 1
-// class Node {
-//   constructor(data) {
-//     // complete constructor method here
-//     this.data = data;
-//     this.next = null;
-//   }
 
-//   setNextNode(node) {
-// // complete setNextNode method here
-//  if (node instanceof Node || node === null) {
-//       this.next = node;
-//     } else {
-//       throw new Error('Next node must be a member of the Node class.');
-//     }
-//   }
-  
-//   getNextNode() {
-//     return this.next;
-//   }
-// }
 
-// module.exports = Node;
+
+//
 
 // 4 parcticasi
 // import React from 'react';
@@ -225,3 +233,241 @@
 // }
 
 // export default Reserve;
+
+// import React, { useState, useEffect } from 'react';
+
+// function Recipe(props) {
+//  const { unit } = props;
+//  const [recipe, setRecipe] = useState([
+//     { name: 'Salted Butter', amount: 250 },
+//     { name: 'Granulated Sugar', amount: 200 },
+//     { name: 'Milk', amount: 100 },
+//     { name: 'All-Purpose Flour', amount: 360 },
+//     { name: 'Chocolate Chips', amount: 350 }
+//  ]);
+
+//  const gToOz = (value) => {
+//     return (value / 28.35).toFixed(2);
+//  };
+
+//  const ozToG = (value) => {
+//     return (value * 28.35).toFixed(0);
+//  };
+
+//  // Create an effect hook that calculates the amount of ingredients when unit changes. 
+//  useEffect(() => {
+//     const newRecipe = recipe.map(item => {
+//       return { ...item, amount: unit === 'oz' ? gToOz(item.amount) : ozToG(item.amount) };
+//     });
+
+//     setRecipe(newRecipe);
+//  }, [unit]);
+
+//  return (
+//     <div className='ingredient-list'>
+//         {recipe.map((item, i) => (
+//             (<p key={i}><span className='name'>{item.name}</span>: {item.amount}{unit}</p>)
+//         ))}
+//     </div>
+//  );
+// }
+
+// export default Recipe;
+
+
+
+
+
+
+/// 5 ders 1
+// class Node {
+//   constructor(data) {
+//     // complete constructor method here
+//     this.data = data;
+//     this.next = null;
+//   }
+
+//   setNextNode(node) {
+// // complete setNextNode method here
+//  if (node instanceof Node || node === null) {
+//       this.next = node;
+//     } else {
+//       throw new Error('Next node must be a member of the Node class.');
+//     }
+//   }
+  
+//   getNextNode() {
+//     return this.next;
+//   }
+// }
+
+// module.exports = Node;
+
+//5.2
+// const LinkedList = require("./LinkedList");
+
+// class Queue {
+//   constructor(maxSize = Infinity) {
+//     this.queue = new LinkedList();
+//     this.maxSize = maxSize;
+//     this.size = 0;
+//   }
+
+//   enqueue(data) {
+//     if(this.hasRoom()) {
+//       this.queue.addToTail(data);
+//       this.size++;
+//       console.log(`Added ${data} to queue! Queue size is now ${this.size}.`);  
+//     } else {
+//        throw new Error("The queue is full");
+//     }
+ 
+//   }
+
+//   hasRoom() {
+//     return this.size < this.maxSize;
+//   }
+// }
+
+// const boundedQueue = new Queue(3);
+
+// try {
+//   boundedQueue.enqueue('hat');
+//   boundedQueue.enqueue('pants');
+//   boundedQueue.enqueue('shirt');
+// } catch (err) {
+//   console.log(err);
+// }
+
+
+// module.exports = Queue;
+
+
+//5.3
+
+// class TreeNode {
+//     constructor(data) {
+//       this.data = data;
+//       this.children = [];
+//     }
+  
+//     addChild(child) {
+//       if (child instanceof TreeNode) {
+//         this.children.push(child);
+//       } else {
+//         this.children.push(new TreeNode(child));
+//       }
+//     }
+    
+//     depthFirstTraversal() {
+//       console.log(this.data);
+//       this.children.forEach(child => child.depthFirstTraversal());
+//     }
+  
+//   };
+  
+//   const treeTraversalExample = () => {
+//     const tree = new TreeNode(15);
+//     const randomize = () => Math.floor(Math.random() * 10);
+  
+//     tree.addChild(randomize());
+//     tree.addChild(randomize());
+  
+//     tree.children.forEach( (child) => {
+//     child.addChild(randomize()*10);
+//     child.addChild(randomize()*10);
+//     });
+  
+//     tree.depthFirstTraversal();
+//   }
+  
+//   // uncomment to call example function
+//   treeTraversalExample();
+  
+//   module.exports = TreeNode;
+
+
+//5.4
+// const Edge = require('./Edge.js');
+// const Vertex = require('./Vertex.js');
+
+// class Graph {
+//   constructor() {
+//     this.vertices = [];
+//   }
+
+//   addVertex(data) {
+//     const newVertex = new Vertex(data);
+//     this.vertices.push(newVertex);
+//     return newVertex;
+//   }
+
+//   addEdge(vertexOne, vertexTwo) {
+//     if (!(vertexOne instanceof Vertex) || !(vertexTwo instanceof Vertex)) {
+//       throw new Error('Ambos os argumentos devem ser instâncias da classe Vertex');
+//     }
+
+//     vertexOne.addEdge(vertexTwo);
+//     vertexTwo.addEdge(vertexOne);
+//   }
+
+//   print() {
+//     this.vertices.forEach(vertex => vertex.print());
+//   }
+// }
+// const friendNetwork = new Graph();
+// const friendSara = friendNetwork.addVertex('Sara');
+// const friendMeera = friendNetwork.addVertex('Meera');
+// friendNetwork.addEdge(friendSara, friendMeera);
+// friendNetwork.print();
+
+// module.exports = Graph;
+
+// 5.5
+// function countDownIterative(count) {
+//     while (count > 0) {
+//       console.log(count);
+//       count--;
+//     }
+//     console.log('Blast Off~!');
+//   }
+  
+//   console.log('Iterative Countdown:');
+//   countDownIterative(3);
+  
+//   function countDownRecursive(count) {
+//      if (count === 0) {
+//       console.log('Blast Off~!')
+//      } else {
+//       console.log(count)
+//       countDownRecursive(count - 1)
+//      }
+//   }
+  
+//   console.log('Recursive Countdown:');
+//   countDownRecursive(3);
+
+//5.6
+// const merge = require('./merge');
+
+// const mergeSort = (startArray) => {
+//  const length = startArray.length;
+//  if (length === 1) {
+//     return startArray;
+//  }
+  
+//  const mid = Math.floor(length / 2);
+//  const leftArray = startArray.slice(0, mid);
+//  const rightArray = startArray.slice(mid, length);
+
+//  // Recursively call mergeSort on leftArray and rightArray
+//  return merge(mergeSort(leftArray), mergeSort(rightArray));
+// };
+
+// const inputArr = [8,9,4,5,3];
+
+// console.log(mergeSort(inputArr));
+
+// module.exports = {
+//  mergeSort
+// };
