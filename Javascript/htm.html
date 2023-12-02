@@ -8,12 +8,25 @@
 
 </head>
 <body>
-    <main>
-      
-
-        <button id="myDiv">Click me</button>
+   
+    <textarea name="demo" id="demo" cols="30" rows="10"></textarea>
+    <button onclick="convertToUpperCase()">Convert to Upper Case</button>
+    
+    <script>
+        function convertToUpperCase() {
+            var textarea = document.getElementById("demo");
+            var currentValue = textarea.value;
+            
+            if (/^[A-Z ]+$/.test(currentValue)) {
+                textarea.value = currentValue.toLowerCase();
+                
+            } else {
+                textarea.value = currentValue.toUpperCase();
+            }
+        }
+    </script>
         
-    </main>
+    
     <script src="./js.js"></script>
 </body>
 </html>
